@@ -25,4 +25,4 @@ __meta__ = {
 position = Vector2( 128, 144 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
-position = Vector2( 944, 392 )
+position = Vector2( 920, 432 )

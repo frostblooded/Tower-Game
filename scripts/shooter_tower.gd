@@ -21,11 +21,14 @@ func get_closest_enemy():
 
 
 func _on_ShotTimer_timeout():
-	var bullet: Node2D = bullet_scene.instance()
-	get_tree().get_root().add_child(bullet)
-
 	var closestEnemy: Node2D = get_closest_enemy()
-	var direction = (closestEnemy.position - position).normalized()
 
+	if not closestEnemy:
+		return
+
+	var direction: Vector2 = (closestEnemy.position - position).normalized()
+
+	var bullet: Node2D = bullet_scene.instance()
 	bullet.direction = direction
 	bullet.position = position
+	get_tree().get_root().add_child(bullet)
