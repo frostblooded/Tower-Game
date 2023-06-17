@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/red.png-05b3228fc2d1b95d5876cdf9be510c01.image"
+
+[deps]
+
+source_file="res://sprites/red.png"
+dest_files=[ "res://.import/red.png-05b3228fc2d1b95d5876cdf9be510c01.image" ]
+
+[params]
+
