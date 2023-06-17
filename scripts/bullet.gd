@@ -2,7 +2,7 @@ extends Node2D
 
 var direction: Vector2
 export var speed: float = 200
-export var damage: float = 1
+export var damage: int = 1
 
 func _physics_process(delta):
 	if not direction.is_normalized():
