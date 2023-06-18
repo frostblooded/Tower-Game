@@ -9,6 +9,8 @@
 
 [node name="Main" type="Node2D"]
 
+[node name="HUD" parent="." instance=ExtResource( 6 )]
+
 [node name="Background" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
@@ -20,8 +22,6 @@ texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="HUD" parent="." instance=ExtResource( 6 )]
 
 [node name="TowerBases" type="Node2D" parent="."]
 

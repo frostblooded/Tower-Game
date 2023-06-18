@@ -5,9 +5,6 @@ export var speed: float = 200
 export var damage: int = 1
 
 func _physics_process(delta):
-	if not direction.is_normalized():
-		print_debug("Bullet direction not normalized: %s of length %f!" % [direction, direction.length()])
-
 	position += delta * speed * direction
 
 func _process(_delta):

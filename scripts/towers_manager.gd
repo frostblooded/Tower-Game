@@ -13,7 +13,8 @@ func add_tower(tower_scene: PackedScene):
 	if free_spawners.empty():
 		return
 	
-	var spawner: TowerSpawner = free_spawners[0] as TowerSpawner
+	var spawner_index: int = randi() % free_spawners.size()
+	var spawner: TowerSpawner = free_spawners[spawner_index] as TowerSpawner
 	spawner.add_tower(tower_scene)
 
 

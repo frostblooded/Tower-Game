@@ -15,4 +15,4 @@ func get_spawn_position(enemy: Node2D) -> Vector2:
 	var enemy_shape: RectangleShape2D = enemy.get_node("Area2D/CollisionShape2D").shape as RectangleShape2D
 	var x: float = extents.x + enemy_shape.extents.x
 	var y: float = rand_range(0, extents.y)
-	return position + Vector2(x, y)
+	return global_position + Vector2(x, y)
