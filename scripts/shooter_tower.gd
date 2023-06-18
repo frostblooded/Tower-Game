@@ -30,5 +30,5 @@ func _on_ShotTimer_timeout():
 
 	var bullet: Node2D = bullet_scene.instance()
 	bullet.direction = direction
-	bullet.position = position
+	bullet.position = $ShotOrigin.global_position
 	get_tree().get_root().add_child(bullet)

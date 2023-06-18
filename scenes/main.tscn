@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/shooter_tower.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/background.png" type="Texture" id=2]
 [ext_resource path="res://scenes/enemy_spawner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/tower_spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/base.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/hud.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/towers_manager.tscn" type="PackedScene" id=7]
 
 [node name="Main" type="Node2D"]
 
@@ -22,8 +23,22 @@ __meta__ = {
 
 [node name="HUD" parent="." instance=ExtResource( 6 )]
 
-[node name="ShooterTower" parent="." instance=ExtResource( 1 )]
-position = Vector2( 96, 390 )
+[node name="TowerBases" type="Node2D" parent="."]
+
+[node name="TowerBase" parent="TowerBases" instance=ExtResource( 4 )]
+position = Vector2( 96, 96 )
+
+[node name="TowerBase2" parent="TowerBases" instance=ExtResource( 4 )]
+position = Vector2( 96, 224 )
+
+[node name="TowerBase3" parent="TowerBases" instance=ExtResource( 4 )]
+position = Vector2( 96, 352 )
+
+[node name="TowerBase4" parent="TowerBases" instance=ExtResource( 4 )]
+position = Vector2( 96, 480 )
+
+[node name="TowerBase5" parent="TowerBases" instance=ExtResource( 4 )]
+position = Vector2( 96, 608 )
 
 [node name="Base" parent="." instance=ExtResource( 5 )]
 __meta__ = {
@@ -35,5 +50,7 @@ position = Vector2( 1152, 0 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="TowersManager" parent="." instance=ExtResource( 7 )]
 
 [connection signal="health_changed" from="Base" to="HUD" method="_on_Base_health_changed"]

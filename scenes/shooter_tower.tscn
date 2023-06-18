@@ -9,10 +9,14 @@ script = ExtResource( 2 )
 bullet_scene = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -24 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 1 )
 
 [node name="ShotTimer" type="Timer" parent="."]
 autostart = true
+
+[node name="ShotOrigin" type="Node2D" parent="."]
+position = Vector2( 0, -56 )
 
 [connection signal="timeout" from="ShotTimer" to="." method="_on_ShotTimer_timeout"]

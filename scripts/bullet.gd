@@ -19,3 +19,7 @@ func _on_Area2D_area_entered(area:Area2D):
 	if node.is_in_group("enemies"):
 		node.get_node("Health").take_damage(damage)
 		queue_free()
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()

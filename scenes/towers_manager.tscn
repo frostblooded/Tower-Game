@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/towers_manager.gd" type="Script" id=1]
+[ext_resource path="res://scenes/shooter_tower.tscn" type="PackedScene" id=2]
+
+[node name="TowersManager" type="Node2D"]
+script = ExtResource( 1 )
+starter_tower = ExtResource( 2 )
