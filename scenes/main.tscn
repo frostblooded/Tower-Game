@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://sprites/background.png" type="Texture" id=2]
-[ext_resource path="res://scenes/enemy_spawner.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/tower_spawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/enemies/enemy_spawner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/towers/tower_spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/base.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/hud.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/towers_manager.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/ui/hud.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/towers/towers_manager.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/main.gd" type="Script" id=8]
 
 [node name="Main" type="Node2D"]

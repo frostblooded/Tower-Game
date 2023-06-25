@@ -1,4 +1,4 @@
-extends "res://scripts/bullet.gd"
+extends "res://scripts/towers/bullets/bullet.gd"
 
 
 func _on_bullet_hit(node: Node2D):

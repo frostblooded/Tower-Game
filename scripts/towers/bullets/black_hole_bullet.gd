@@ -1,4 +1,4 @@
-extends "res://scripts/bullet.gd"
+extends "res://scripts/towers/bullets/bullet.gd"
 
 export var on_hit_spawned_scene: PackedScene
 

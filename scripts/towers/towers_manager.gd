@@ -1,10 +1,11 @@
 extends Node2D
 
-export var starter_tower: PackedScene
+export(Array, PackedScene) var towers: Array
 
 
 func _ready():
-	add_tower(starter_tower)
+	for tower in towers:
+		add_tower(tower)
 
 
 func add_tower(tower_scene: PackedScene):
